@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-29T13:16:35 IST" name="Default suite" finished-at="2023-09-29T13:41:13 IST" duration-ms="1477400">
+    <groups>
+    </groups>
+    <test started-at="2023-09-29T13:16:35 IST" name="Default test" finished-at="2023-09-29T13:41:13 IST" duration-ms="1477400">
+      <class name="apitesting.CheckOutTest">
+        <test-method is-config="true" signature="classConfig()[pri:0, instance:apitesting.CheckOutTest@54c5a2ff]" started-at="2023-09-29T13:16:35 IST" name="classConfig" finished-at="2023-09-29T13:16:36 IST" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classConfig -->
+        <test-method signature="netBankingTest()[pri:0, instance:apitesting.CheckOutTest@54c5a2ff]" started-at="2023-09-29T13:16:36 IST" name="netBankingTest" finished-at="2023-09-29T13:41:13 IST" duration-ms="1476901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- netBankingTest -->
+        <test-method is-config="true" signature="classTearDown()[pri:0, instance:apitesting.CheckOutTest@54c5a2ff]" started-at="2023-09-29T13:41:13 IST" name="classTearDown" finished-at="2023-09-29T13:41:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTearDown -->
+      </class> <!-- apitesting.CheckOutTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
