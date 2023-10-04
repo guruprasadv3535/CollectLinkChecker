@@ -595,7 +595,7 @@ public class CheckOutTest extends BaseClass {
 
 			// for paytm bank
 			if (i == 46) {
-					if (driver.getTitle().contains("Paytm")) {
+					if (driver.getTitle().contains("Paytm Payments")||driver.getCurrentUrl().contains("paytmbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
 						bankDownList += bankName + ", ";
@@ -604,7 +604,7 @@ public class CheckOutTest extends BaseClass {
 
 			// for Standard charter bank
 			if (i == 47) {
-					if (driver.getTitle().contains("Paytm Payments")||driver.getCurrentUrl().contains("paytmbank")) {
+					if (driver.getTitle().contains("Standard Chartered")||driver.getCurrentUrl().contains("retail.sc")) {
 						//System.out.println(bankName + ": done");
 					} else {
 						bankDownList += bankName + ", ";
