@@ -6,8 +6,8 @@
       <class name="apitesting.CheckOutTest">
         <methods>
           <include name="classConfig"/>
-          <include name="netBankingTest"/>
           <include name="classTearDown"/>
+          <include name="schedular"/>
         </methods>
       </class> <!-- apitesting.CheckOutTest -->
     </classes>

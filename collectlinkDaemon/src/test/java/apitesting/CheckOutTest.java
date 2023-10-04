@@ -149,7 +149,7 @@ public class CheckOutTest extends BaseClass {
 	public void netBankingTest() throws Exception {
 
 		Response response = CollectLinkPayloadApi.CreateUser(property);
-//		System.out.println(response.getBody().asString());
+		//System.out.println(response.getBody().asString());
 
 		String collectLink = response.path("data");
 		property.writeToProperties("url", collectLink, UtilitiesPath.PROPERTIES_PATH);
@@ -604,7 +604,7 @@ public class CheckOutTest extends BaseClass {
 
 			// for Standard charter bank
 			if (i == 47) {
-					if (driver.getTitle().contains("Standard Chartered")||driver.getCurrentUrl().contains("retail.sc")) {
+					if (driver.getTitle().contains("Paytm Payments")||driver.getCurrentUrl().contains("paytmbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
 						bankDownList += bankName + ", ";
@@ -743,10 +743,10 @@ public class CheckOutTest extends BaseClass {
 	public void schedular() throws Exception {
 
 		int count = 1;
-		while (count <= 3) {
-			if (count <= 3) {
-				netBankingTest();
-				count++;
+		while (count <= 4) {
+			netBankingTest();
+//			count++;
+			if (count < 4) {
 				TimeUnit.HOURS.sleep(2);
 			} else {
 				break;
