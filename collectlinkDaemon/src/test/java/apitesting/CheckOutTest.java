@@ -716,7 +716,7 @@ public class CheckOutTest extends BaseClass {
 			// to stop the execution once all banks done
 			System.out.println("finsh");
 			property.writeToProperties("i", String.valueOf(0), UtilitiesPath.PROPERTIES_PATH);
-			property.writeToProperties("serverDown", "Bank List: ", UtilitiesPath.PROPERTIES_PATH);
+			property.writeToProperties("serverDown", "", UtilitiesPath.PROPERTIES_PATH);
 			if(!(bankDownList.equals(""))){
 				String message = """
 						Hi,

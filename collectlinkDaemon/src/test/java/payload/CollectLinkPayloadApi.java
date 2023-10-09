@@ -50,7 +50,7 @@ public class CollectLinkPayloadApi {
 		}
 		String newValue=""+i;
 		property.writeToProperties("coll_ref",newValue, UtilitiesPath.PROPERTIES_PATH);
-		String collect_ref="ServerTest:"+i;
+		String collect_ref="RemoteTest2-"+i;
 		
 		int amt=500;
 //		if(i%2==0) {
