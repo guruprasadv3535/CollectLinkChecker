@@ -171,7 +171,7 @@ public class CheckOutTest extends BaseClass {
 //		checking banks server
 		String bankDownList = property.readData("serverDown");
 		List<WebElement> allBankList = checkOut.allBanks();
-		while (i <= 57) {
+		while (i <= allBankList.size()-1) {
 			String bankName = allBankList.get(i).getText();
 
 			allBankList.get(i).click();
@@ -183,7 +183,7 @@ public class CheckOutTest extends BaseClass {
 						// if bank server is working this will execute
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -193,7 +193,7 @@ public class CheckOutTest extends BaseClass {
 						// if bank server is working this will execute
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -202,7 +202,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("INDIAN BANK")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -211,7 +211,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("PayUbiz")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -220,7 +220,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Axis")||driver.getCurrentUrl().contains("axisbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -229,7 +229,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Bank of Baroda")||driver.getCurrentUrl().contains("bobibanking")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -238,7 +238,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Bank of India")||driver.getCurrentUrl().contains("bankofindia")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -247,7 +247,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Bank of Maharashtra")||driver.getCurrentUrl().contains("mahaconnect")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -256,7 +256,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Canara Bank")||driver.getCurrentUrl().contains("canarabank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -265,7 +265,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("CSB NetBanking")||driver.getCurrentUrl().contains("csbnet")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -274,7 +274,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Central Bank")||driver.getCurrentUrl().contains("centralbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -283,7 +283,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Citi")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -292,7 +292,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("CITY UNION BANK")||driver.getCurrentUrl().contains("onlinecub")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -301,7 +301,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Union Bank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -310,7 +310,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("COSMOS")||driver.getCurrentUrl().contains("cosmosbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -319,7 +319,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("DCB")||driver.getCurrentUrl().contains("dcbbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -328,7 +328,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Bank of Baroda")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -337,7 +337,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("DEUTSCHE BANK")||driver.getCurrentUrl().contains("deutschebank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -346,7 +346,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("fednetbank")||driver.getCurrentUrl().contains("fednetbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -355,7 +355,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("HDFC Bank")||driver.getCurrentUrl().contains("hdfcbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -364,7 +364,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Log in to Internet Banking")||driver.getCurrentUrl().contains("icicibank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -373,7 +373,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("IDBI")||driver.getCurrentUrl().contains("idbibank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -382,7 +382,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Enterprise Auth")||driver.getCurrentUrl().contains("idfcfirstbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -391,7 +391,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("INDIAN BANK")||driver.getCurrentUrl().contains("indianbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -400,7 +400,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("TPPEntry")||driver.getCurrentUrl().contains("iobnet")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -409,7 +409,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Indusind Bank")||driver.getCurrentUrl().contains("indusind")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -418,7 +418,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("J&K Bank")||driver.getCurrentUrl().contains("jkbankonline")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -427,7 +427,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Janata Sahakari")||driver.getCurrentUrl().contains("jsbnet")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -436,7 +436,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("MoneyClick")||driver.getCurrentUrl().contains("ktkbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -445,7 +445,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("kvbin")||driver.getCurrentUrl().contains("kvbin")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -454,7 +454,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Kotak Mahindra Bank")||driver.getCurrentUrl().contains("kotak")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -463,7 +463,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("DBS")||driver.getCurrentUrl().contains("lvbankonline")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -472,7 +472,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("PNB")||driver.getCurrentUrl().contains("pnbibanking")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -481,7 +481,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("PNB")||driver.getCurrentUrl().contains("pnbibanking")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -490,7 +490,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Punjab & Sind")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -499,7 +499,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("RBL Bank")||driver.getCurrentUrl().contains("rblbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -508,7 +508,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Saraswat Bank")||driver.getCurrentUrl().contains("saraswatbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -517,7 +517,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("STATE BANK OF INDIA")||driver.getCurrentUrl().contains("onlinesbi")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -526,7 +526,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("South Indian Bank")||driver.getCurrentUrl().contains("southindianbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -535,7 +535,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Canara Bank")||driver.getCurrentUrl().contains("canarabank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -544,7 +544,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Tamilnad Mercantile Bank")||driver.getCurrentUrl().contains("tmbnet")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -553,7 +553,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Uco Bank")||driver.getCurrentUrl().contains("ucoebanking")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -562,7 +562,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Union Bank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -571,7 +571,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("PNB")||driver.getCurrentUrl().contains("pnbibanking")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -580,7 +580,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Bank of Baroda")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -589,7 +589,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("YES Bank")||driver.getCurrentUrl().contains("yesbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -598,7 +598,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Paytm Payments")||driver.getCurrentUrl().contains("paytmbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -607,7 +607,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Standard Chartered")||driver.getCurrentUrl().contains("retail.sc")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -616,7 +616,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Bandhan")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -625,7 +625,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("BAHRAIN & KUWAIT")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -634,7 +634,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("DBS")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -643,7 +643,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Dhanlaxmi Bank")||driver.getCurrentUrl().contains("dhanbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -653,7 +653,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Aditya Birla")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -662,7 +662,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("SVC")||driver.getCurrentUrl().contains("svcbank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -671,7 +671,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Internet Banking")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -680,7 +680,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Bharat")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -689,7 +689,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Nainital Bank")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 
@@ -698,7 +698,7 @@ public class CheckOutTest extends BaseClass {
 					if (driver.getTitle().contains("Personal Net Banking")) {
 						//System.out.println(bankName + ": done");
 					} else {
-						bankDownList += bankName + ", ";
+						bankDownList += bankName + ",";
 					}
 			}
 			i++;
@@ -717,15 +717,17 @@ public class CheckOutTest extends BaseClass {
 			System.out.println("finsh");
 			property.writeToProperties("i", String.valueOf(0), UtilitiesPath.PROPERTIES_PATH);
 			property.writeToProperties("serverDown", "Bank List: ", UtilitiesPath.PROPERTIES_PATH);
-			if(!(bankDownList.equals("Bank List: "))){
+			if(!(bankDownList.equals(""))){
 				String message = """
 						Hi,
 
 						   The below mentioned netBanking is down.
-						            \n""" + bankDownList + """
-						   \n\nThanks & Regards,
-						Guruprasad v
-								""";
+						            \nBank List:-\n""";
+			String split[] = bankDownList.split(",");
+			for(int bankIndex=0;bankIndex<split.length;bankIndex++) {
+				message += (bankIndex+1)+". "+split[bankIndex].trim()+"\n";
+			}
+			    message +=	"\n\n Thanks & Regards,\nGuruprasad v";
 				EmailGenration a1 = new EmailGenration();
 				a1.sendMail("Collectlink bank server down", message);
 			}
@@ -733,10 +735,6 @@ public class CheckOutTest extends BaseClass {
 			// to re-call the method to check for all banks
 			netBankingTest();
 		}
-	}
-
-	public void specifiedNetBanking() {
-
 	}
 
 	@Test
