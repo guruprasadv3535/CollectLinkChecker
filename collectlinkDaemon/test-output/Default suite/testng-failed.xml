@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apitesting.CheckOutTest">
+      <class name="apitesting.SndboxCheckOutTest">
         <methods>
           <include name="classConfig"/>
           <include name="classTearDown"/>
-          <include name="schedular"/>
+          <include name="netBankingTest"/>
         </methods>
-      </class> <!-- apitesting.CheckOutTest -->
+      </class> <!-- apitesting.SndboxCheckOutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

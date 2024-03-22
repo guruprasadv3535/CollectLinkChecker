@@ -9,18 +9,6 @@ import org.testng.annotations.BeforeMethod;
 import io.restassured.response.Response;
 import pom.CheckOutPage;
 
-
-//import genricLibraries.PropertiesUtility;
-//import genricLibraries.ExcelUtility;
-//import genricLibraries.PropertiesUtility;
-//import genricLibraries.WebDriverUtility;
-
-//import pom.ContactUsPage;
-//import pom.SeleniumTrainingPage;
-//import pom.SkillraryDemoAppPage;
-//import pom.SkillraryHomePage;
-//import pom.TestingPage;
-
 public class BaseClass {
 
 	protected PropertiesUtility property;

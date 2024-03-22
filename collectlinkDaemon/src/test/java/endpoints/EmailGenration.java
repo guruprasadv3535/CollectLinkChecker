@@ -61,8 +61,8 @@ public class EmailGenration {
         MimeMessage email = new MimeMessage(session);
         email.setFrom(new InternetAddress(TEST_EMAIL));
         email.addRecipient(TO, new InternetAddress(TEST_EMAIL));
-        email.addRecipient(TO, new InternetAddress("pavan@iamvouched.com"));
-        email.addRecipient(TO, new InternetAddress("anusree@iamvouched.com"));
+//        email.addRecipient(TO, new InternetAddress("pavan@iamvouched.com"));
+//        email.addRecipient(TO, new InternetAddress("anusree@iamvouched.com"));
         email.setSubject(subject);
         email.setText(message);
 

@@ -80,7 +80,7 @@ public class CheckOutPage {
 	/*
 	 * NetBnking payment mode declaration
 	 */
-	@FindBy(xpath = "//div[text()='More Banks']")
+	@FindBy(xpath = "//div[text()='MORE BANKS']")
 	private WebElement moreBanks;
 
 	@FindBy(xpath = "//div[text()='Select Your Bank']/preceding-sibling::div/child::div")
